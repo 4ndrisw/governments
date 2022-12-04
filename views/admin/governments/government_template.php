@@ -102,16 +102,6 @@
 
             <div class="row">
                <div class="col-md-6">
-                 <?php $value = (isset($government) ? $government->siup : ''); ?>
-                 <?php echo render_input('siup','siup',$value); ?>
-               </div>
-               <div class="col-md-6">
-                 <?php $value = (isset($government) ? $government->vat : ''); ?>
-                 <?php echo render_input('vat','vat',$value); ?>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-6">
                   <?php if (get_option('governments_use_bpjs_kesehatan_field') == 1) {
                      $value = (isset($government) ? $government->bpjs_kesehatan : '');
                      echo render_input('bpjs_kesehatan', 'bpjs_kesehatan', $value);
