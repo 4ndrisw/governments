@@ -14,7 +14,6 @@ $aColumns = [
     'company',
     'firstname',
     'email',
-    'is_preffered',
     db_prefix().'clients.phonenumber as phonenumber',
     db_prefix().'clients.active',
 ];
