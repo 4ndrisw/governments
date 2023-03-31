@@ -57,11 +57,12 @@ class Governments_model extends Clients_Model
     /**
      * Get unique sale agent for governments / Used for filters
      * @return array
-     */
+     
     public function get_sale_agents()
     {
         return $this->db->query("SELECT DISTINCT(sale_agent) as sale_agent, CONCAT(firstname, ' ', lastname) as full_name FROM " . db_prefix() . 'governments JOIN ' . db_prefix() . 'staff on ' . db_prefix() . 'staff.staffid=' . db_prefix() . 'governments.sale_agent WHERE sale_agent != 0')->result_array();
     }
+    */
 
     /**
      * Get client object based on passed clientid if not passed clientid return array of all clients

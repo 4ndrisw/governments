@@ -54,7 +54,7 @@ class Governments extends AdminController
             $data['title']                 = _l('governments');
             $data['bodyclass']             = 'governments-total-manual';
             $data['governments_years']       = $this->governments_model->get_governments_years();
-            $data['governments_sale_agents'] = $this->governments_model->get_sale_agents();
+            //$data['governments_sale_agents'] = $this->governments_model->get_sale_agents();
             if($id){
                 $this->load->view('admin/governments/manage_small_table', $data);
 
